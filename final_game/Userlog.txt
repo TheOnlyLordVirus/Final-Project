@@ -1,0 +1,89 @@
+You try to open the door but its lock
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
+DEBUG Word Combo: wall
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
+DEBUG Word Combo: wall
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hitwall
+DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
+DEBUG Word Combo: wall
+DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.west
+DEBUG: I do not understand the word: west, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.move
+DEBUG Word Combo: move
+DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
+DEBUG: I do not understand the word: commands, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
+DEBUG: I do not understand the word: commands, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
+DEBUG: I do not understand the word: commands, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.commands
+DEBUG: I do not understand the word: commands, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
+DEBUG Word Combo: wall
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hitwall
+DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
+DEBUG: I do not understand the word: hit, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
+DEBUG Word Combo: wall
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: inspectbookshelf
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: inspectbookshelf
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.inspectbookshelf
+DEBUG: I do not understand the word: inspectbookshelf, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: movewestwall
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: movewestwall
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
+DEBUG Word Combo: hitwall
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: hitwall
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: hitwall
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
+DEBUG Word Combo: hitwall
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.fdsa
+DEBUG: I do not understand the word: fdsa, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
+DEBUG Word Combo: 
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: hitwall
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: test
+DEBUG: String to Enum Parse error! null
+DEBUG Word Combo: test
+DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hsl
+DEBUG: I do not understand the word: hsl, removing word and checking combinations.
+DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
+DEBUG Word Combo: 
