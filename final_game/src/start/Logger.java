@@ -8,6 +8,9 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
 
+/**
+ * Logger Class
+ */
 public interface Logger 
 {
 	
@@ -16,7 +19,7 @@ public interface Logger
 	 * 
 	 * @param message
 	 */
-	public static void addLog(String message) 
+	public static void addLog(String message)
 	{
 
 		// Create file instance
@@ -35,7 +38,6 @@ public interface Logger
 			}
 			
 		} 
-		
 		catch (Exception e) 
 		{
 
@@ -94,7 +96,6 @@ public interface Logger
 			}
 			
 		} 
-		
 		catch (Exception e) 
 		{
 

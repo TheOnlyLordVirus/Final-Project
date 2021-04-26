@@ -1,7 +1,7 @@
 package start;
 
 /**
- * West Wall Class extends Scene implements SceneInterfacce
+ * West Wall Class extends Scene
  */
 public class WestWall extends Scene
 {	
@@ -48,7 +48,7 @@ public class WestWall extends Scene
 	WestWall()
 	{
 		this.LocationName = "West Wall";
-		this.LocationDescription = "You are facing the West Wall, You Notice an object wedged in the wall... you may have to break the wall to reach it.";	
+		this.LocationDescription = "You are facing the West Wall, You notice an object wedged in the wall... you may have to break the wall to reach it.";	
 	}
 	
 	/**
@@ -71,19 +71,19 @@ public class WestWall extends Scene
 			// Change rooms.
 			case movenorthwall:
 				GameManager.currentLocation = "NorthWall";
-				GameManager.clear();
+				GameManager.location();
 				Escape_The_Psych_Ward.iPrintLn("You move to the North Wall.");
 			break;
 			
 			case moveeastwall:
 				GameManager.currentLocation = "EastWall";
-				GameManager.clear();
+				GameManager.location();
 				Escape_The_Psych_Ward.iPrintLn("You move to the East Wall.");
 			break;
 			
 			case movesouthwall:
 				GameManager.currentLocation = "SouthWall";
-				GameManager.clear();
+				GameManager.location();
 				Escape_The_Psych_Ward.iPrintLn("You move to the South Wall.");
 			break;
 				

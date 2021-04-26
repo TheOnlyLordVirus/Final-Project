@@ -6,35 +6,45 @@ package start;
  */
 public abstract class Scene implements SceneInterface
 {
+	
 	enumMasterWordList currentWords[];
 	protected String LocationName;
 	protected String LocationDescription;
 	
 	enum enumMasterWordList
 	{
-		northwall, north, eastwall, east, southwall, south, westwall, west,
 		wall, floor, bed, clock, door, key, open, close, grab, move, inspect, jump, bookshelf, hit,
-		credits, help, log, delete, test, window, book, sleep, look
+		credits, help, log, test, window, book, sleep, look, vent, crawl, dining, room, psych, leave,
+		check, desk, login, computer, add, record, database, update, delete, records
 	}
 	
     @Override
     public String toString() {
+    	
+    	// Return location name
         return String.format("Location: " + LocationName);
     }
 	
 	@Override
-	public String getName() 
+	public String getName()
 	{
+		// Return location name
 		return LocationName;
 	}
 	
 	@Override
 	public String getDescription() 
 	{
+		// Return location Description
 		return LocationDescription;
 	}
 	
-	public void perform(String message) 
+	/**
+	 * perform method will get the words from user's input
+	 * 
+	 * @param message
+	 */
+	public void perform(String message)
 	{
 		/*This will be added to and abstract base class for all scenes soon but this was patched in by Trenton to Coles Scene code for better CLI functionality*/
 		if(!message.isEmpty())
@@ -49,9 +59,6 @@ public abstract class Scene implements SceneInterface
 			// Loop through for all words provided
 			for (int i = 0; i < spliter.length; i++) 
 			{
-				// Now they are all in lower case.
-				//spliter[i] = spliter[i].toLowerCase();
-			
 				
 				// Get words.
 				try
@@ -65,42 +72,38 @@ public abstract class Scene implements SceneInterface
 				
 				// If this word doesn't parse from the valueOf() method to a enum
 				catch (Exception Ex)
-				{
-					// Debug data.
-					System.out.println("DEBUG: String to Enum Parse error!" + Ex.getMessage());
-					System.out.println("DEBUG: I do not understand the word: " + spliter[i] + ", removing word and checking combinations.");
+				{	
+					// Print invalid word
+					System.out.println("Invaild word used: " + spliter[i] + ", removing word.");
 					
-					// Write to log.
-					Logger.addLog("DEBUG: String to Enum Parse error!" + Ex.getMessage());
-					Logger.addLog("DEBUG: I do not understand the word: " + spliter[i] + ", removing word and checking combinations.");
+					// Write invalid word to log.
+					Logger.addLog("Invaild word used: " + spliter[i] + ", removing word.");
 				}	
 			}
-			
-			
 			
 			// Get combination.
 			try
 			{
 				// Try to parse the string to a combination!
-				//currentCombination = enumCombination.valueOf(parseToCombination);
 				ParseCombination(parseToCombination);
 				
-				// If it parses preform the combination.
+				// Write message to log
+				Logger.addLog("Action was performed");
+				
+				// If it parses perform the combination.
 				interaction();
 			}
 			
 			// If this is a failing combination 
 			catch (Exception Ex)
 			{
-				// Debug data.
-				System.out.println("DEBUG: String to Enum Parse error! " + Ex.getMessage());
-				System.out.println("DEBUG Word Combo: " + parseToCombination);
+				// Print invalid combination to log
+				System.out.println("Invaild word Combination: " + parseToCombination);
 				
-				// Add this to the logs.
-				Logger.addLog("DEBUG: String to Enum Parse error! " + Ex.getMessage());
-				Logger.addLog("DEBUG Word Combo: " + parseToCombination);
+				// Write invalid combination to log
+				Logger.addLog("Invaild word Combination: " + parseToCombination);
 				
-				// Print to user.
+				// Print message
 				Escape_The_Psych_Ward.iPrintLn("I do not understand this combination of words.");
 			}
 		}

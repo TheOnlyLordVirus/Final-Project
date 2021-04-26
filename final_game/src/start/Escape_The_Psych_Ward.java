@@ -16,6 +16,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.Font;
 
+/**
+ * Escape_The_Psych_Ward class
+ */
 public class Escape_The_Psych_Ward 
 {
 	private static final Escape_The_Psych_Ward windowInstance = new Escape_The_Psych_Ward();
@@ -68,7 +71,7 @@ public class Escape_The_Psych_Ward
 	{
 		frmEscapeThePsych = new JFrame();
 		frmEscapeThePsych.setTitle("Escape The Psych Ward");
-		frmEscapeThePsych.setBounds(100, 100, 805, 450);
+		frmEscapeThePsych.setBounds(100, 100, 805, 550);
 		frmEscapeThePsych.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 		dbgButton = new JButton("Enter!");
 		userInput = new JTextField();
@@ -136,9 +139,6 @@ public class Escape_The_Psych_Ward
 			}
 		});
 	}
-	
-	
-	
 	/**
 	 * Prints a string to the console.
 	 * @param s is the string.

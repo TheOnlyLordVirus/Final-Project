@@ -1,6 +1,5 @@
 package start;
 
-import java.time.LocalDateTime;
 import java.util.Calendar;
 
 /**
@@ -21,7 +20,7 @@ public class TimeTracker {
 		dateTime.set(Calendar.YEAR, 2020);
 		dateTime.set(Calendar.MONTH, 4);
 		dateTime.set(Calendar.DATE, 13);
-		dateTime.set(Calendar.HOUR_OF_DAY, 06);
+		dateTime.set(Calendar.HOUR_OF_DAY, 12);
 		dateTime.set(Calendar.MINUTE, 00);
 		dateTime.set(Calendar.SECOND, 00);
 	}

@@ -1,147 +1,185 @@
-You try to open the door but its lock
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hitwall
-DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.west
-DEBUG: I do not understand the word: west, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.move
-DEBUG Word Combo: move
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hitwall
-DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: inspectbookshelf
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: inspectbookshelf
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.inspectbookshelf
-DEBUG: I do not understand the word: inspectbookshelf, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movewestwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movewestwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.fdsa
-DEBUG: I do not understand the word: fdsa, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: test
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: test
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hsl
-DEBUG: I do not understand the word: hsl, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.lkjflsl
-DEBUG: I do not understand the word: lkjflsl, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sjfldkj
-DEBUG: I do not understand the word: sjfldkj, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.cole
-DEBUG: I do not understand the word: cole, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movenorthwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movenorthwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: moveeastwall
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: moveeastwall
-DEBUG: String to Enum Parse error! No enum constant start.EastWall.enumCombination.movesouthnorth
-DEBUG Word Combo: movesouthnorth
-DEBUG: String to Enum Parse error! No enum constant start.EastWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.southwall
-DEBUG Word Combo: southwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.inspectbed
-DEBUG Word Combo: inspectbed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.fjslfk
-DEBUG: I do not understand the word: fjslfk, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.time
-DEBUG: I do not understand the word: time, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.inspect
-DEBUG Word Combo: inspect
+Invaild word used: hello, removing word.
+invaild word Combination: 
+Invaild word used: the, removing word.
+Invaild word used: big, removing word.
+Invaild word used: red, removing word.
+Invaild word used: monkey, removing word.
+invaild word Combination: 
+User Started The Game
+User Input:slkjfjk
+Invaild word used: slkjfjk, removing word.
+Invaild word Combination: 
+User Input:inspect me
+Invaild word used: me, removing word.
+Invaild word Combination: inspect
+User Started The Game
+Start Time: java.util.GregorianCalendar[time=1619331857183,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="America/Chicago",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2021,MONTH=3,WEEK_OF_YEAR=18,WEEK_OF_MONTH=5,DAY_OF_MONTH=25,DAY_OF_YEAR=115,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=1,HOUR_OF_DAY=1,MINUTE=24,SECOND=17,MILLISECOND=183,ZONE_OFFSET=-21600000,DST_OFFSET=3600000]
+User Started The Game
+Start Time: java.util.GregorianCalendar[time=1619331908582,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="America/Chicago",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2021,MONTH=3,WEEK_OF_YEAR=18,WEEK_OF_MONTH=5,DAY_OF_MONTH=25,DAY_OF_YEAR=115,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=1,HOUR_OF_DAY=1,MINUTE=25,SECOND=8,MILLISECOND=582,ZONE_OFFSET=-21600000,DST_OFFSET=3600000]
+User Started The Game
+User Input: sklfj
+Invaild word used: sklfj, removing word.
+Invaild word Combination: 
+User Input: inspect bed
+Action was performed
+User Started The Game
+User Input: move dining room
+Invaild word Combination: movediningroom
+User Input: dining room
+Invaild word Combination: diningroom
+User Input: move dining room
+Invaild word Combination: movediningroom
+User Started The Game
+User Input: inspect window
+Action was performed
+User Input: leave room
+Action was performed
+Invaild word Combination: leaveroom
+User Started The Game
+User Input: leave room
+Action was performed
+User Started The Game
+User Input: inspect bed
+Action was performed
+User Input: door
+Invaild word Combination: door
+User Input: troooll
+Invaild word used: troooll, removing word.
+Invaild word Combination: 
+User Input: move dining
+Action was performed
+User Input: move psych room
+Action was performed
+User Input: move psych room
+Invaild word Combination: movepsychroom
+User Input: psych room
+Invaild word Combination: psychroom
+User Input: move psych room
+Invaild word Combination: movepsychroom
+User Input: move dining room
+Action was performed
+User Input: move psych room
+Action was performed
+User Input: open vent
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: inspect vent
+Action was performed
+User Input: move vent
+Action was performed
+User Started The Game
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Started The Game
+User Input: m,svk
+Invaild word used: m,svk, removing word.
+Invaild word Combination: 
+User Input: hello
+Invaild word used: hello, removing word.
+Invaild word Combination: 
+User Input: move dininig room
+Invaild word used: dininig, removing word.
+Invaild word Combination: moveroom
+User Input: move dining room
+Action was performed
+User Input: leave room
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move office
+Invaild word used: office, removing word.
+Invaild word Combination: move
+User Input: help
+Invaild word Combination: help
+User Input: move diningroom
+Invaild word used: diningroom, removing word.
+Invaild word Combination: move
+User Input: leave
+Invaild word Combination: leave
+User Input: inspect metalbars
+Invaild word used: metalbars, removing word.
+Invaild word Combination: inspect
+User Input: inspect vent
+Action was performed
+User Input: inspect bed
+Action was performed
+User Input: inspect room
+Invaild word Combination: inspectroom
+User Input: inspect clock
+Action was performed
+User Input: open door
+Action was performed
+User Input: open vent
+Action was performed
+User Input: crawl vent
+Action was performed
+User Input: leaveroom
+Invaild word used: leaveroom, removing word.
+Invaild word Combination: 
+User Input: leaveroom
+Invaild word used: leaveroom, removing word.
+Invaild word Combination: 
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Started The Game
+User Input: sleep bed
+Action was performed
+User Input: open vent
+Action was performed
+User Input: crawl vent
+Action was performed
+User Input: check desk
+Invaild word used: check, removing word.
+Invaild word used: desk, removing word.
+Invaild word Combination: 
+User Input: check desk
+Invaild word used: check, removing word.
+Invaild word used: desk, removing word.
+Invaild word Combination: 
+User Input: add record
+Invaild word used: add, removing word.
+Invaild word used: record, removing word.
+Invaild word Combination: 
+User Started The Game
+User Input: leave room
+Action was performed
+User Input: leave room
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: open vent
+Action was performed
+User Input: crawl vent
+Action was performed
+User Input: check desk
+Action was performed
+User Input: login computer
+Action was performed
+User Started The Game
+User Input: sleep bed
+Action was performed
+User Input: open vent
+Action was performed
+User Input: crawl vent
+Action was performed
+User Input: check computer
+Invaild word Combination: checkcomputer
+User Input: check desk
+Action was performed
+User Input: login computer
+Action was performed
