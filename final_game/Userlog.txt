@@ -1,147 +1,866 @@
-You try to open the door but its lock
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hitwall
-DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.NorthWall.enumWordList.west
-DEBUG: I do not understand the word: west, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.move
-DEBUG Word Combo: move
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.WestWall.enumWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.commands
-DEBUG: I do not understand the word: commands, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hitwall
-DEBUG: I do not understand the word: hitwall, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hit
-DEBUG: I do not understand the word: hit, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.wall
-DEBUG Word Combo: wall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: inspectbookshelf
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: inspectbookshelf
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.inspectbookshelf
-DEBUG: I do not understand the word: inspectbookshelf, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.WestWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movewestwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movewestwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.hitwall
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.fdsa
-DEBUG: I do not understand the word: fdsa, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: hitwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: test
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: test
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.hsl
-DEBUG: I do not understand the word: hsl, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.lkjflsl
-DEBUG: I do not understand the word: lkjflsl, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sjfldkj
-DEBUG: I do not understand the word: sjfldkj, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.cole
-DEBUG: I do not understand the word: cole, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movenorthwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: movenorthwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: moveeastwall
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! null
-DEBUG Word Combo: moveeastwall
-DEBUG: String to Enum Parse error! No enum constant start.EastWall.enumCombination.movesouthnorth
-DEBUG Word Combo: movesouthnorth
-DEBUG: String to Enum Parse error! No enum constant start.EastWall.enumCombination.northwall
-DEBUG Word Combo: northwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.southwall
-DEBUG Word Combo: southwall
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.inspectbed
-DEBUG Word Combo: inspectbed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.sleep
-DEBUG: I do not understand the word: sleep, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.bed
-DEBUG Word Combo: bed
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.fjslfk
-DEBUG: I do not understand the word: fjslfk, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.NorthWall.enumCombination.
-DEBUG Word Combo: 
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.on
-DEBUG: I do not understand the word: on, removing word and checking combinations.
-DEBUG: String to Enum Parse error!No enum constant start.Scene.enumMasterWordList.time
-DEBUG: I do not understand the word: time, removing word and checking combinations.
-DEBUG: String to Enum Parse error! No enum constant start.SouthWall.enumCombination.inspect
-DEBUG Word Combo: inspect
+User Input: move dining room
+Action was performed
+User Input: talk smoker
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: talk teeth 
+Invaild word Combination: talkteeth
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Started The Game
+User Input: go dining
+Action was performed
+User Started The Game
+User Input: go dining
+Action was performed
+User Started The Game
+User Input: go dining
+Action was performed
+User Started The Game
+User Input: go dining
+Action was performed
+User Started The Game
+User Input: go diniing
+Invaild word used: diniing, removing word.
+Invaild word Combination: go
+User Input: go dining
+Action was performed
+User Started The Game
+User Input: open door
+Action was performed
+User Input: open window
+Action was performed
+User Input: jump window
+Invaild word Combination: jumpwindow
+User Input: climb outside
+Invaild word Combination: climboutside
+User Input: climb wall
+Invaild word Combination: climbwall
+User Input: move dining
+Action was performed
+User Input: take screwdriver
+Invaild word used: take, removing word.
+Invaild word Combination: screwdriver
+User Input: talk teeth
+Invaild word Combination: talkteeth
+User Input: talk maniac
+Action was performed
+User Input: punch smoker
+Invaild word Combination: punchsmoker
+User Input: punch maniac
+Invaild word Combination: punchmaniac
+User Input: kick smoker
+Invaild word Combination: kicksmoker
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: test teeth
+Action was performed
+User Input: trade 
+Invaild word used: trade, removing word.
+Invaild word Combination: 
+User Input: talk smoker
+Action was performed
+User Input: move office
+Invaild word Combination: moveoffice
+User Input: move room
+Invaild word Combination: moveroom
+User Input: move psych room
+Action was performed
+User Input: open vent
+Action was performed
+User Input: climb vent
+Invaild word Combination: climbvent
+User Input: move dining
+Action was performed
+User Input: smile
+Action was performed
+Bad Ending: Smile
+User Started The Game
+User Input: stand up
+Invaild word used: stand, removing word.
+Invaild word used: up, removing word.
+Invaild word Combination: 
+User Input: check window
+Action was performed
+User Input: move metal bars
+Invaild word used: metal, removing word.
+Invaild word used: bars, removing word.
+Invaild word Combination: move
+User Input: shake bars
+Invaild word used: shake, removing word.
+Invaild word used: bars, removing word.
+Invaild word Combination: 
+User Input: inspect bars
+Invaild word used: bars, removing word.
+Invaild word Combination: inspect
+User Input: check vent
+Action was performed
+User Input: remove screws
+Invaild word used: remove, removing word.
+Invaild word used: screws, removing word.
+Invaild word Combination: 
+User Input: open vent
+Action was performed
+User Input: crawl 
+Invaild word Combination: crawl
+User Input: check vent
+Action was performed
+User Input: crawl
+Invaild word Combination: crawl
+User Input: enter vent
+Invaild word used: enter, removing word.
+Invaild word Combination: vent
+User Input: vent
+Invaild word Combination: vent
+User Input: inspect vent
+Action was performed
+User Input: enter vent
+Invaild word used: enter, removing word.
+Invaild word Combination: vent
+User Input: crawl in vent
+Invaild word used: in, removing word.
+Action was performed
+Bad Ending: Vent
+User Started The Game
+User Input: inspect bed
+Action was performed
+User Input: sleep
+Invaild word Combination: sleep
+User Input: rest
+Invaild word used: rest, removing word.
+Invaild word Combination: 
+User Input: check clock
+Action was performed
+User Input: sleep
+Invaild word Combination: sleep
+User Input: go to bed
+Invaild word used: to, removing word.
+Invaild word Combination: gobed
+User Input: sleep
+Invaild word Combination: sleep
+User Input: insp
+Invaild word used: insp, removing word.
+Invaild word Combination: 
+User Input: check window
+Action was performed
+User Input: ins
+Invaild word used: ins, removing word.
+Invaild word Combination: 
+User Input: inspect door
+Action was performed
+User Input: enter dining room
+Invaild word used: enter, removing word.
+Invaild word Combination: diningroom
+User Input: leave room
+Invaild word Combination: leaveroom
+User Input: dining room
+Invaild word Combination: diningroom
+User Input: dinning room
+Invaild word used: dinning, removing word.
+Invaild word Combination: room
+User Input: enter room
+Invaild word used: enter, removing word.
+Invaild word Combination: room
+User Input: check door
+Action was performed
+User Input: go to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: talk to maniac
+Invaild word used: to, removing word.
+Action was performed
+User Input: punch guards
+Invaild word used: guards, removing word.
+Invaild word Combination: punch
+User Input: punck
+Invaild word used: punck, removing word.
+Invaild word Combination: 
+User Input: punch
+Invaild word Combination: punch
+User Input: hit guards
+Invaild word used: guards, removing word.
+Invaild word Combination: hit
+User Input: metal file
+Invaild word used: metal, removing word.
+Invaild word Combination: file
+User Input: talk to smoker
+Invaild word used: to, removing word.
+Action was performed
+User Input: check room
+Invaild word Combination: checkroom
+User Input: talk to guards
+Invaild word used: to, removing word.
+Invaild word used: guards, removing word.
+Invaild word Combination: talk
+User Started The Game
+User Started The Game
+User Started The Game
+User Started The Game
+User Started The Game
+User Started The Game
+User Input: inspect book
+Invaild word used: book, removing word.
+Invaild word Combination: inspect
+User Input: inspect door
+Action was performed
+User Input: go dining
+Action was performed
+User Input: go dining
+Invaild word Combination: godining
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight
+User Started The Game
+User Input: move to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: fight the guard
+Invaild word used: the, removing word.
+Action was performed
+User Input: talk to the maniac
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Started The Game
+Invalid Command of /inventory
+Invalid Command of /inventory
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: fight with the guard
+Invaild word used: with, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Started The Game
+User Input: move to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: fight with the guard
+Invaild word used: with, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: talk to the maniac
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: jump
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: fight with the guard
+Invaild word used: with, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move bed
+Invaild word Combination: movebed
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: right guard
+Invaild word used: right, removing word.
+Invaild word Combination: guard
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Started The Game
+User Started The Game
+User Input: move to dining room
+Invaild word used: to, removing word.
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move room
+Invaild word Combination: moveroom
+User Input: move psyce room
+Invaild word used: psyce, removing word.
+Invaild word Combination: moveroom
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: inspect bed
+Action was performed
+User Input: go dining room
+Action was performed
+User Started The Game
+User Input: inspect window
+Action was performed
+User Input: move dining room
+Action was performed
+User Started The Game
+User Input: go dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: h
+Invaild word used: h, removing word.
+Invaild word Combination: 
+User Started The Game
+User Input: go to dining area
+Invaild word used: to, removing word.
+Invaild word used: area, removing word.
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: go dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: go dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: punch patient
+Invaild word used: patient, removing word.
+Invaild word Combination: punch
+User Input: punch patient
+Invaild word used: patient, removing word.
+Invaild word Combination: punch
+User Started The Game
+User Input: go dining
+Action was performed
+User Input: fight patient
+Action was performed
+User Input: go dining are
+Invaild word used: are, removing word.
+Action was performed
+User Input: fight patient
+Action was performed
+Bad Ending: Fight Patient
+User Started The Game
+User Input: open window
+Action was performed
+User Input: open vent
+Action was performed
+User Input: go dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: punch securtiy guard
+Invaild word used: securtiy, removing word.
+Action was performed
+User Input: go dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: punch patient
+Action was performed
+Bad Ending: Fight Patient
+User Started The Game
+User Input: punch maniac
+Invaild word Combination: punchmaniac
+User Input: punch guard
+Invaild word Combination: punchguard
+User Input: punch guard
+Invaild word Combination: punchguard
+User Input: move dining
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: move dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move dining
+Invaild word Combination: movedining
+User Input: move psych room
+Action was performed
+User Input: open vent
+Action was performed
+User Input: open vent
+Action was performed
+User Input: open vent
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: open vent
+Action was performed
+User Input: move dining
+Action was performed
+User Input: punch  guard
+Invaild word used: , removing word.
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move dining
+Invaild word Combination: movedining
+User Input: move psych room
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: open vent
+Action was performed
+User Input: move dining are
+Invaild word used: are, removing word.
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: move dining area
+Invaild word used: area, removing word.
+Action was performed
+User Input: talk to manica
+Invaild word used: to, removing word.
+Invaild word used: manica, removing word.
+Invaild word Combination: talk
+User Input: talk maniac
+Action was performed
+User Input: open vent
+Invaild word Combination: openvent
+User Input: go psych room
+Action was performed
+User Input: open vent
+Action was performed
+Invalid Command of /invetory
+Invalid Command of /invetory
+User Started The Game
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: talk maniac
+Invaild word Combination: talkmaniac
+User Input: talk to the tooth maniac
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Invaild word used: tooth, removing word.
+Invaild word Combination: talkmaniac
+User Started The Game
+User Input: move to the dining room
+Invaild word used: to, removing word.
+Invaild word used: the, removing word.
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: talk tooth maniac
+Invaild word used: tooth, removing word.
+Invaild word Combination: talkmaniac
+User Input: talk maniac
+Invaild word Combination: talkmaniac
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight Guard
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining room
+Action was performed
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: talk maniac
+Action was performed
+User Input: move psyc room
+Invaild word used: psyc, removing word.
+Invaild word Combination: moveroom
+User Input: move room
+Invaild word Combination: moveroom
+User Input: move bed room
+Invaild word Combination: movebedroom
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: right guard
+Invaild word used: right, removing word.
+Invaild word Combination: guard
+User Input: fight guard
+Action was performed
+User Input: move dining room
+Action was performed
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: trade tooth
+Invaild word used: trade, removing word.
+Invaild word used: tooth, removing word.
+Invaild word Combination: 
+User Input: trade tooth
+Invaild word used: trade, removing word.
+Invaild word used: tooth, removing word.
+Invaild word Combination: 
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: trade maniac
+Invaild word used: trade, removing word.
+Invaild word Combination: maniac
+User Input: talk maniac
+Action was performed
+User Input: talk teeth maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move dining 
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining room
+Action was performed
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining room
+Action was performed
+User Input: trade teeth
+Invaild word used: trade, removing word.
+Invaild word Combination: teeth
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+Invalid Command of /open vent
+User Input: open vent
+Action was performed
+Invalid Command of /invetory
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move diningb room
+Invaild word used: diningb, removing word.
+Invaild word Combination: moveroom
+User Input: talk maniac
+Invaild word Combination: talkmaniac
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move diningroom
+Invaild word used: diningroom, removing word.
+Invaild word Combination: move
+User Input: move dining
+Action was performed
+User Input: talk tooth maniac
+Invaild word used: tooth, removing word.
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Input: punch guard
+Action was performed
+Invaild word Combination: punchguard
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: punch guard
+Action was performed
+Invaild word Combination: punchguard
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Input: kick guard
+Action was performed
+Invaild word Combination: kickguard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight Guard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight Guard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight Guard
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+Invaild word Combination: fightguard
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+Bad Ending: Fight Guard
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining room
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Started The Game
+User Input: move dining room
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vetn
+Invaild word used: vetn, removing word.
+Invaild word Combination: open
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Started The Game
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight the guard
+Invaild word used: the, removing word.
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk tooth maniac
+Invaild word used: tooth, removing word.
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
+User Input: open vent
+Action was performed
+User Started The Game
+User Input: move dining
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: move dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: move psych
+Action was performed
+User Input: open vent
+Action was performed
