@@ -11,30 +11,33 @@ import Items.Tooth;
 import start.Escape_The_Psych_Ward;
 
 /**
- *  Scene Base Class
- *
+ *  Base scene class used 
  */
 public abstract class Scene implements SceneInterface
 {
-	enumMasterWordList currentWords[];
+	// Protected so any of the children classes are able to use these if needed.
+	protected enumMasterWordList currentWords[];
 	protected String LocationName;
 	protected String LocationDescription;
-	protected boolean Stop = false;
 
 	// Master list of Items for the game.
-	final static Tooth myTooth = new Tooth();
-	final static Screwdriver myScrewdriver = new Screwdriver(); 
-	final static Cigarette smokersCiggarette = new Cigarette();
-	final static Metalfile metalFile = new Metalfile();
-	final static Note passwordNote = new Note();	
+	// Not sure how well this would scale for a larger game but for a small example it works...
+	// - Trenton
+	public final static Tooth myTooth = new Tooth();
+	public final static Screwdriver myScrewdriver = new Screwdriver(); 
+	public final static Cigarette smokersCigarette = new Cigarette();
+	public final static Metalfile metalFile = new Metalfile();
+	public final static Note passwordNote = new Note();	
 	
+	// All of the keywords that the user can enter in for command combinations.
 	public enum enumMasterWordList
 	{
 		bed, clock, door, key, open, close, grab, move, inspect, hit, window,
 		sleep, look, vent, crawl, dining, room, psych, check, desk, login, computer, add, record,
 		database, update, delete, records, teeth, state, item, generator, turn, off, climb, fence,
 		smile, lobby, main, go, unscrew, screwdriver, yard, outside, metal, file, use, office, maniac,
-		talk, smoker, speak, punch, kick, fight, investigate, walk, jump, guard, patient;
+		talk, smoker, speak, punch, kick, fight, walk, jump, guard, patient, tooth, knock, gate, 
+		trade, personal, search,
 	}
 	
 	/**
@@ -61,7 +64,8 @@ public abstract class Scene implements SceneInterface
 	}
 	
     @Override
-    public String toString() {
+    public String toString()
+    {
     	
     	// Return location name
         return String.format("Location: " + LocationName);
@@ -82,13 +86,18 @@ public abstract class Scene implements SceneInterface
 	}
 	
 	/**
-	 * perform method will get the words from user's input
+	 * The perform method will get the words from user's input.
+	 * This will filter words that are not in the enumMasterWordList from the users CLI input.
+	 * Then it will take the remaining words and combine them in the order that is supplied by the user
+	 * If the combination of words from enumMasterWordList is in the same order as one of the combinations from the derived 'child' Scenes enumCombination
+	 * Than the combination will Parse and the child Scene will run the action for that enumCombination.
+	 * I hope that makes sense...
+	 * - Trenton.
 	 * 
 	 * @param message
 	 */
 	public void perform(String message)
 	{
-		/*This will be added to and abstract base class for all scenes soon but this was patched in by Trenton to Coles Scene code for better CLI functionality*/
 		if(!message.isEmpty())
 		{
 			// Split the message

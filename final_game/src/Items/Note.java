@@ -7,7 +7,7 @@ public class Note extends Item
 {
 	public Note()
 	{
-		Name = "Note";
-		Description = "Has a username and password on it.";	
+		Name = "Important Note";
+		Description = "The note has an username and password on it.";	
 	}
 }

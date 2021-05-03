@@ -7,7 +7,7 @@ public class Cigarette extends Item
 {
 	public Cigarette()
 	{
-		Name = "Cigarette";
+		Name = "Cigarettes";
 		Description = "You don't smoke but its good for trading.";
 	}
 }

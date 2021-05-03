@@ -9,9 +9,20 @@ package Items;
  */
 public class InventoryList <T>
 {
+	/**
+	 * Basicly just a container to store data and the next set of data, which can contain another set of data in it, which can contain another set of data in it.... 
+	 * and so on...
+	 * As longs as next != null then there is another peice of data in this 'chain' of nodes.
+	 * 
+	 * @author Trenton Metzler
+	 *
+	 */
     private class ItemNode
     {
-    	// The constructor sets the next Node to be null and sets the data to be the passed type.
+    	/**
+    	 *  The constructor sets the next Node to be null and sets the data to be the passed type.
+    	 * @param t
+    	 */
         public ItemNode(T t)
         {
             next = null;
@@ -23,13 +34,19 @@ public class InventoryList <T>
         // Stores the next Node in the Generic list.
         private ItemNode next;
         
-        // Get the next node.
+        /**
+         *  Get the next node.
+         * @return
+         */
         public ItemNode getNext()
         {
             return next;
         }
         
-        // Set the next node.
+        /**
+         *  Set the next node.
+         * @param node
+         */
         public void setNext(ItemNode node)
         {
             next = node;
@@ -37,10 +54,15 @@ public class InventoryList <T>
         
         
         
-        // Stores the Data.
+        /**
+         *  Stores the Data.
+         */
         private T data;
         
-        // Return Data
+        /**
+         *  Return Data
+         * @return
+         */
         public T getData()
         {
             return data;
@@ -53,14 +75,19 @@ public class InventoryList <T>
     // The start of the list (The first object stored)
     private ItemNode head;
     
-    // Create the object in memory, start the node rabbit hole.
+    /**
+     *  Create the object in memory, start the node rabbit hole.
+     */
     public InventoryList()
 	{
 		head = null;
 	}
     
 	
-	// Adds a node
+	/**
+	 *  Adds a node
+	 * @param t
+	 */
     public void Add(T t)
     {
         ItemNode node = new ItemNode(t);
@@ -70,7 +97,11 @@ public class InventoryList <T>
         size += 1;
     }
     
-    // Gets the data at a indexed node.
+    /**
+     *  Gets the data at a indexed node.
+     * @param index
+     * @return Data stored at the index.
+     */
     public T Get(int index)
     {
         ItemNode current = head;
@@ -83,7 +114,11 @@ public class InventoryList <T>
         return current == null ? null : current.getData();
     }
     
-    // Does this object exist in our inventory?
+    /**
+     * Does this object exist in our inventory?
+     * @param t
+     * @return true if exists.
+     */
     public boolean Exists(T t)
     {
     	if(head != null)
@@ -123,7 +158,10 @@ public class InventoryList <T>
     	return false;
     }
     
-    // Removes the element at the specified position in this list.
+    /**
+     *  Removes the element at the specified position in this list.
+     * @param t
+     */
  	public void Remove(T t)
  	{
  		ItemNode newHead = null;
@@ -152,7 +190,10 @@ public class InventoryList <T>
  		size -= 1;
  	}
     
-    // Gets the size of your inventory.
+    /**
+     *  Gets the size of your inventory.
+     * @return The total size of our inventorys contents.
+     */
     public int length()
     {
     	return size;

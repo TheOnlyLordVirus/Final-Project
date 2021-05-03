@@ -4,7 +4,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.TreeMap;
-
 import Items.*;
 import Scenes.*;
 import Scenes.Scene.enumMasterWordList;
@@ -16,18 +15,30 @@ import start.Escape_The_Psych_Ward;
  */
 public class GameManager 
 {
-	// Game Condition boolean.
-	static boolean GameOver = false;
+	/**
+	 * Public variables for other packages.
+	 */
 	
-	// TreeMap
-	static Map<String, Scene> Scenes = new TreeMap<>();
-
+	// Game Condition boolean.
+	public static boolean GameOver = false;
+	
 	// The users inventory management system is based on a LinkList algorithm.
 	//  - Trenton Metzler
 	public static InventoryList<Item> UserItems = new InventoryList<Item>();
 	
 	// Use to get the current Scene from Scenes;
 	public static String currentLocation = "Psych Room";
+	
+	
+	/**
+	 * Private, will not be needed by other classes.
+	 */
+	
+	// Stores the action that the user sent.
+	private static String action;
+	
+	// TreeMap requirement, This stores all of the Scenes and has an associated "Key" that is represented by a String.
+	private static Map<String, Scene> Scenes = new TreeMap<>();
 	
 
 	/**
@@ -38,10 +49,13 @@ public class GameManager
 		// Create Scenes
 		PsychRoom bedroom = new PsychRoom();
 		Scenes.put("Psych Room", bedroom);
+		
 		OfficeRoom officeroom = new OfficeRoom();
 		Scenes.put("Office Room", officeroom);
+		
 	    DiningRoom diningroom = new DiningRoom();
 		Scenes.put("Dining Room", diningroom);
+		
 	    Yard yard = new Yard();
 		Scenes.put("Yard", yard);
 		
@@ -93,6 +107,8 @@ public class GameManager
 			if(GameOver == false)
 			{
 				
+				action = message;
+				
 				// Print the location
 				location();	
 				
@@ -105,6 +121,9 @@ public class GameManager
 				{
 					// Write message to log
 					Logger.addLog("User Input: " + message);
+					
+					// Print message
+					Escape_The_Psych_Ward.iPrintLn("Response:");
 					
 					// Perform command
 					Scenes.get(currentLocation).perform(message);
@@ -124,32 +143,32 @@ public class GameManager
 				else if(message.equals("/log"))
 				{
 					// Read log
-					Escape_The_Psych_Ward.iPrintLn("Log was printed on console");
+					Escape_The_Psych_Ward.iPrintLn("Log Response:");
+					Escape_The_Psych_Ward.iPrintLn("Log was printed on console.");
 					Logger.readLog();
 				}
 				
 				else if(message.equals("/deletelog"))
 				{
 					// Delete log
-					Escape_The_Psych_Ward.iPrintLn("Log was deleted");
+					Escape_The_Psych_Ward.iPrintLn("Log Response:");
+					Escape_The_Psych_Ward.iPrintLn("Log file was deleted.");
 					Logger.deleteLog();
 				}
 				
 				else if(message.equals("/help"))
 				{
 					// Print words
-					Escape_The_Psych_Ward.iPrintLn("--------------------");
 					Escape_The_Psych_Ward.iPrintLn("Master Command List:");
-					Escape_The_Psych_Ward.iPrintLn("--------------------");
 					
 					enumMasterWordList[] x = enumMasterWordList.values();
 					
 	                // Print each word used in the game
-	                for(int i = 0; i < x.length; i += 4)
+	                for(int i = 0; i < x.length; i += 10)
 	                {
 	                	
 	                    String println = "";
-	                    for(int j = 0; j < 4; j++)
+	                    for(int j = 0; j < 10; j++)
 	                    {
 	                        if(i + j < x.length)
 	                        {
@@ -171,21 +190,21 @@ public class GameManager
 				else if(message.equals("/inventory"))
 				{
 					// Print words
-					Escape_The_Psych_Ward.iPrintLn("--------------------");
 					Escape_The_Psych_Ward.iPrintLn("Current Inventory:");
-					Escape_The_Psych_Ward.iPrintLn("--------------------");
 					
-					
+					// Print the contents of our inventory.
 					if(UserItems.length() > 0)
 					{
 		                for(int i = 0; i < UserItems.length(); i++)
 		                {
+		                	// Print item name and description
 		                	Escape_The_Psych_Ward.iPrintLn(UserItems.Get(i).getName() + " - " + UserItems.Get(i).getDescription());
 		                }
 					}
 					
 					else
 					{
+						// Print message
 						Escape_The_Psych_Ward.iPrintLn("You currently don't have any items in your inventory.");
 					}
 				}
@@ -193,7 +212,8 @@ public class GameManager
 				else
 				{
 					// Print invalid command
-					Escape_The_Psych_Ward.iPrintLn("Invalid Command");
+					Escape_The_Psych_Ward.iPrintLn("Command Response:");
+					Escape_The_Psych_Ward.iPrintLn("Invalid command was used.");
 					Logger.addLog("Invalid Command of " + message);
 				}
 			}
@@ -208,9 +228,15 @@ public class GameManager
 		// Clear UI
 		Escape_The_Psych_Ward.clearLn();
 		
-		// Print Location
+		// Print location name, description and action
 		Escape_The_Psych_Ward.iPrintLn(Scenes.get(currentLocation).toString());
-		Escape_The_Psych_Ward.iPrintLn(Scenes.get(currentLocation).getDescription() + "\n");
+		Escape_The_Psych_Ward.iPrintLn("");
+		Escape_The_Psych_Ward.iPrintLn("Description:");
+		Escape_The_Psych_Ward.iPrintLn(Scenes.get(currentLocation).getDescription());
+		Escape_The_Psych_Ward.iPrintLn("");
+		Escape_The_Psych_Ward.iPrintLn("Action: " + action);
+		Escape_The_Psych_Ward.iPrintLn("");
+		
 	}
 	
 	/**

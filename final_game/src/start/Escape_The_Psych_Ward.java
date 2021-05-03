@@ -23,12 +23,13 @@ import java.awt.Font;
  */
 public class Escape_The_Psych_Ward 
 {
+	// Using the singleton pattern in order to prevent the application from creating multiple Window Instances.
 	private static final Escape_The_Psych_Ward windowInstance = new Escape_The_Psych_Ward();
+	private static final GameManager Session = new GameManager();
 	private static JFrame frmEscapeThePsych;
-	private static JButton dbgButton;
+	private static JButton enterCommandButton;
 	private static JTextField userInput;
 	private static JTextArea logOutput;
-	private static final GameManager Session = new GameManager();
 	
 	/**
 	* Launch the application.
@@ -46,6 +47,7 @@ public class Escape_The_Psych_Ward
 	{
 		EventQueue.invokeLater(new Runnable() 
 		{
+			@SuppressWarnings("static-access")
 			public void run() 
 			{
 				try 
@@ -76,7 +78,7 @@ public class Escape_The_Psych_Ward
 		frmEscapeThePsych.setTitle("Escape The Psych Ward");
 		frmEscapeThePsych.setBounds(100, 100, 925, 550);
 		frmEscapeThePsych.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
-		dbgButton = new JButton("Enter!");
+		enterCommandButton = new JButton("Enter!");
 		userInput = new JTextField();
 		userInput.setColumns(10);
 		logOutput = new JTextArea();
@@ -92,7 +94,7 @@ public class Escape_The_Psych_Ward
 						.addGroup(groupLayout.createSequentialGroup()
 							.addComponent(userInput, GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(dbgButton, GroupLayout.PREFERRED_SIZE, 103, GroupLayout.PREFERRED_SIZE)))
+							.addComponent(enterCommandButton, GroupLayout.PREFERRED_SIZE, 103, GroupLayout.PREFERRED_SIZE)))
 					.addContainerGap())
 		);
 		groupLayout.setVerticalGroup(
@@ -103,16 +105,19 @@ public class Escape_The_Psych_Ward
 					.addGap(18)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(userInput)
-						.addComponent(dbgButton, GroupLayout.PREFERRED_SIZE, 18, GroupLayout.PREFERRED_SIZE))
+						.addComponent(enterCommandButton, GroupLayout.PREFERRED_SIZE, 18, GroupLayout.PREFERRED_SIZE))
 					.addGap(9))
 		);
 		frmEscapeThePsych.getContentPane().setLayout(groupLayout);
 	}
 	
+	/**
+	 * Defines all of our gui Events.
+	 */
 	private void loadEvents()
 	{
-		// Events for the dbgButton (Simulates enter key)
-		dbgButton.addActionListener(new ActionListener() 
+		// Events for the enterCommandButton (Simulates enter key)
+		enterCommandButton.addActionListener(new ActionListener() 
 		{	
 			// Click event.
 			public void actionPerformed(ActionEvent e) 
@@ -137,11 +142,12 @@ public class Escape_The_Psych_Ward
 					Session.input(uI);
 					userInput.setText("");
 					// Debug text box.
-					//JOptionPane.showMessageDialog(null, "Woah", "Notice!", JOptionPane.DEFAULT_OPTION);
+					//JOptionPane.showMessageDialog(null, "Key Released", "Notice!", JOptionPane.DEFAULT_OPTION);
 				}
 			}
 		});
 	}
+	
 	/**
 	 * Prints a string to the console.
 	 * @param s is the string.
@@ -149,6 +155,8 @@ public class Escape_The_Psych_Ward
 	public static void iPrintLn (String s)
 	{
 		String startLog = logOutput.getText();
+		
+		// More object comparison using equals.
 		logOutput.setText(!startLog.equals("") ? logOutput.getText() + '\n' + s : s);
 	}
 	

@@ -12,27 +12,26 @@ import start.Escape_The_Psych_Ward;
  * OfficeRoom Class extends Scene
  */
 public class OfficeRoom extends Scene {
-	
+
 	// Variables
-	boolean haveLogin = false;
 	boolean computerHasBeenLogin = false;
 
 	enumCombination currentCombination;
 
 	// Combinations for user input on this scene.
 	public enum enumCombination {
-		opendoor, inspectdoor, checkdoor, jump, crawlvent, movevent, checkdesk, inspectdesk,
-		logincomputer, addrecord, checkdatabase, updaterecord, deleterecords, movepsych, movepsychroom,
-		movelobby, movemainlobby, movelobbyroom, movemainlobbyroom, checkcomputer, inspectcomputer,
-		golobby, golobbyroom, gomainlobby, walklobby, walkmainlobby, walkvent, govent, gopsychroom,
-		walkpsychroom, walkpsych, gopsych, walkmainlobbyroom, walklobbyroom, gomainlobbyroom, lookdesk
+		opendoor, inspectdoor, checkdoor, jump, crawlvent, movevent, checkdesk, inspectdesk, logincomputer, addrecord,
+		checkdatabase, updaterecord, deleterecords, movepsych, movepsychroom, movelobby, movemainlobby, movelobbyroom,
+		movemainlobbyroom, checkcomputer, inspectcomputer, golobby, golobbyroom, gomainlobby, walklobby, walkmainlobby,
+		walkvent, govent, gopsychroom, walkpsychroom, walkpsych, gopsych, walkmainlobbyroom, walklobbyroom,
+		gomainlobbyroom, lookdesk, lookdoor, lookcomputer, usecomputer, createrecord, searchdesk, searchcomputer, goroom
 	}
 
 	// The constructor will set the Location Name and Description for each scene.
 	public OfficeRoom() {
 		this.LocationName = "Office Room";
 		this.LocationDescription = "You are in a dark room that appears to be an office for pysch staff.\n"
-				+ "You see a desk with active computer that you could use.\n"
+				+ "You see a desk with an active computer that you could use.\n"
 				+ "You see a door that leads to the main lobby.\n"
 				+ "You see the vent that you have use to get here from your room.";
 	}
@@ -47,24 +46,26 @@ public class OfficeRoom extends Scene {
 
 	/**
 	 * Interaction method performs action based on combination given
-	 * @throws Exception 
+	 * 
+	 * @throws Exception
 	 */
 	@Override
 	public void interaction() {
 		switch (currentCombination) {
-		
+
 		// Inspect door commands
 		case inspectdoor:
-		case checkdoor:	
-		
+		case checkdoor:
+		case lookdoor:
+
 			// Print messages
 			Escape_The_Psych_Ward.iPrintLn("You have inspected the office door that leads to the main lobby.");
 			Escape_The_Psych_Ward.iPrintLn("The office door appears to be unlock.");
 			Escape_The_Psych_Ward.iPrintLn("But you could hear loud snoring noises coming from the other side of the door.");
 			Escape_The_Psych_Ward.iPrintLn("Proably not a good idea to open this door since you might wake someone up.");
-			
+
 			break;
-		
+
 		// Open door commands
 		case opendoor:
 		case movelobby:
@@ -79,10 +80,10 @@ public class OfficeRoom extends Scene {
 		case walkmainlobby:
 		case walklobbyroom:
 		case walkmainlobbyroom:
-			
+
 			// End game
 			GameManager.gameHasEnded();
-			
+
 			// Print bad ending messages
 			Escape_The_Psych_Ward.iPrintLn("Bad Ending:");
 			Escape_The_Psych_Ward.iPrintLn("You decided to open the office door to the main lobby.");
@@ -94,86 +95,126 @@ public class OfficeRoom extends Scene {
 			Escape_The_Psych_Ward.iPrintLn("");
 			Escape_The_Psych_Ward.iPrintLn("Tip: Some areas should not be travel at all.");
 			Escape_The_Psych_Ward.iPrintLn("Restart the application to try again!");
-			
+
 			// Print in log
 			Logger.addLog("Bad Ending: Office Door");
-			
+
 			break;
-		
+
 		// Inspect desk commands
 		case inspectdesk:
 		case checkdesk:
 		case lookdesk:
-			
+		case searchdesk:
+
 			// Check if login is false
-			if(haveLogin == false) {
-				
-				// Print messages
-				Escape_The_Psych_Ward.iPrintLn("You search the desk and found a sticky note.");
-				Escape_The_Psych_Ward.iPrintLn("The sticky note has an username and password on it.");
-				Escape_The_Psych_Ward.iPrintLn("Maybe you can use it on the computer.");
-				Escape_The_Psych_Ward.iPrintLn("");
-				Escape_The_Psych_Ward.iPrintLn("You continue search through the desk and found a pack of cigarettes.");
-				Escape_The_Psych_Ward.iPrintLn("This could be useful for trading.");
-				
-				// Add sticky note into inventory
-				GameManager.UserItems.Add(passwordNote);
-				
-				// Add cigarettes into inventory
-				GameManager.UserItems.Add(smokersCiggarette);
-				
-				// Set login to true
-				haveLogin = true;
-			}
-			else {
-				
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
 				// Print messages
 				Escape_The_Psych_Ward.iPrintLn("You already search through the desk.");
-				Escape_The_Psych_Ward.iPrintLn("You found a sticky note with some account information and cigarettes the last time you search through it.");
+				Escape_The_Psych_Ward.iPrintLn(
+						"You found a sticky note with some account information and cigarettes the last time you search through it.");
+
+			} else {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You search through the computer desk.");
+				Escape_The_Psych_Ward.iPrintLn("You found a sticky note and a pack of cigarettes.");
+				Escape_The_Psych_Ward.iPrintLn("The sticky note has an username and password on it.");
+				Escape_The_Psych_Ward.iPrintLn("Maybe you can use it on the computer.");
+				Escape_The_Psych_Ward.iPrintLn("The pack of cigarettes could be useful for trading.");
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Items Attained: Note & Cigarettes");
+
+				// Add sticky note into inventory
+				GameManager.UserItems.Add(passwordNote);
+
+				// Add cigarettes into inventory
+				GameManager.UserItems.Add(smokersCigarette);
 			}
-			
+
 			break;
-		
+
 		// Inspect computer commands
 		case inspectcomputer:
 		case checkcomputer:
-			
-			// Print messages
-			Escape_The_Psych_Ward.iPrintLn("You inspect the active computer.");
-			Escape_The_Psych_Ward.iPrintLn("You notice that the computer requires an username and password if you want to use it.");
-			Escape_The_Psych_Ward.iPrintLn("Maybe you can find somthing that has an username and password writen on it.");
-			Escape_The_Psych_Ward.iPrintLn("You should try looking around the office room.");
-			
+		case lookcomputer:
+		case searchcomputer:
+
+			// Check player have a login
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You inspect the active computer.");
+				Escape_The_Psych_Ward.iPrintLn("You should login into the computer using the sticky note that you found.");
+				
+			} else {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You inspect the active computer.");
+				Escape_The_Psych_Ward.iPrintLn("You notice that the computer requires an username and password if you want to use it.");
+				Escape_The_Psych_Ward.iPrintLn("Maybe you can find somthing that has an username and password writen on it.");
+				Escape_The_Psych_Ward.iPrintLn("You should try looking around the office room.");
+			}
+
 			break;
-		
+
 		// Login computer commands
 		case logincomputer:
-			
+		case usecomputer:
+
 			// Check player have a login
-			if(haveLogin == true) {
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You have decided to login into the computer using the information provided by the sticky note");
+				Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
+				Escape_The_Psych_Ward.iPrintLn("");
+
+				// Perform database actions
+				try {
+
+					Escape_DB.Database(enumCombination.logincomputer);
+
+				} catch (SQLException | BadConnection e) {
+					e.printStackTrace();
+				}
 				
-				// Check if computer has been login
-				if (computerHasBeenLogin == false) {
-					
-					// Print message
-					Escape_The_Psych_Ward.iPrintLn("You have decided to login into the computer using the information provided by the sticky note");
-					Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
-					Escape_The_Psych_Ward.iPrintLn("");
-					
-					// Perform database actions
-					try {
-						
-						Escape_DB.Database(currentCombination);
-						
-					} catch (SQLException | BadConnection e) {
-						e.printStackTrace();
-					}
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Actions available: Check Database, Add Record, Update Record & Delete Records.");
+				
+			} else {
+
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("You need to find a username and password to login into the computer.");
+			}
+
+			break;
+
+		// Give me a C!
+		case addrecord:
+
+			// Check player have a login
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You feel mischeivous and decide to add a fake staff member.");
+				Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
+				Escape_The_Psych_Ward.iPrintLn("");
+
+				// Add a record to the database
+				try {
+					Escape_DB.Database(enumCombination.addrecord);
+				} catch (SQLException | BadConnection e) {
+
+					e.printStackTrace();
 				}
-				else {
-					
-					// Print message
-					Escape_The_Psych_Ward.iPrintLn("You already login into the computer");
-				}
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Actions available: Check Database, Add Record, Update Record & Delete Records.");
+				
 			}
 			else {
 				
@@ -182,84 +223,113 @@ public class OfficeRoom extends Scene {
 			}
 			
 			break;
-			
-		// Give me a C!
-		case addrecord:
-			
-			// Print messages
-            Escape_The_Psych_Ward.iPrintLn("You feel mischeivous and decide to add a fake staff member.");
-			Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
-			Escape_The_Psych_Ward.iPrintLn("");
-			
-			//Add a record to the database
-			try {
-				Escape_DB.Database(currentCombination);
-			} catch (SQLException | BadConnection e) {
 
-				e.printStackTrace();
-			}
-			break;
-		
 		// Give me a R!
 		case checkdatabase:
 			
-			// Print messages
-			Escape_The_Psych_Ward.iPrintLn("You decided to check the database on the computer.");
-			Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
-			Escape_The_Psych_Ward.iPrintLn("");
-			
-			//Access all database records
-			try {
-				
-				// Perform database
-				Escape_DB.Database(currentCombination);
-				
-			} catch (SQLException | BadConnection e) {
+			// Check player have a login
+			if (GameManager.UserItems.Exists(passwordNote)) {
 
-				e.printStackTrace();
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You decided to check the database on the computer.");
+				Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
+				Escape_The_Psych_Ward.iPrintLn("");
+
+				// Access all database records
+				try {
+
+					// Perform database
+					Escape_DB.Database(enumCombination.checkdatabase);
+
+				} catch (SQLException | BadConnection e) {
+
+					e.printStackTrace();
+				}
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Actions available: Check Database, Add Record, Update Record & Delete Records.");
+				
 			}
+			else {
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("You need to find a username and password to login into the computer.");
+			}
+
 			break;
-			
+
 		// Give me a U!
-		case updaterecord: 
-			
-			// Print messages
-            Escape_The_Psych_Ward.iPrintLn("You notice that your nick's age is incorrect.");
-			Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
-			Escape_The_Psych_Ward.iPrintLn("");
-			
-			//update a record in the database
-			try {
-				
-				// Perform database
-				Escape_DB.Database(currentCombination);
-				
-			} catch (SQLException | BadConnection e) {
+		case updaterecord:
 
-				e.printStackTrace();
+			// Check player have a login
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You notice that your nick's age is incorrect.");
+				Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
+				Escape_The_Psych_Ward.iPrintLn("");
+
+				// update a record in the database
+				try {
+
+					// Perform database
+					Escape_DB.Database(enumCombination.updaterecord);
+
+				} catch (SQLException | BadConnection e) {
+
+					e.printStackTrace();
+				}
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Actions available: Check Database, Add Record, Update Record & Delete Records.");
+				
 			}
-			break;
+			else {
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("You need to find a username and password to login into the computer.");
+			}
 			
+			break;
+
 		// Give me a D
 		// What does that spell??? CRUD!
-		case deleterecords: 
+		case deleterecords:
 			
-			// Print messages
-            Escape_The_Psych_Ward.iPrintLn("You take this opportunity to delete all of the prisoner records.");
-			Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
-			Escape_The_Psych_Ward.iPrintLn("");
-			
-			// Delete all records in the SUBJECTS table.
-			try {
+			// Check player have a login
+			if (GameManager.UserItems.Exists(passwordNote)) {
+
+				// Print messages
+				Escape_The_Psych_Ward.iPrintLn("You take this opportunity to delete all of the prisoner records.");
+				Escape_The_Psych_Ward.iPrintLn("The following information has been displayed on the computer moniter:");
+				Escape_The_Psych_Ward.iPrintLn("");
+
+				// Delete all records in the SUBJECTS table.
+				try {
+					
+					// Perform database action
+					Escape_DB.Database(enumCombination.deleterecords);
+
+				} catch (SQLException | BadConnection e) {
+
+					e.printStackTrace();
+				}
 				
-				Escape_DB.Database(currentCombination);
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("");
+				Escape_The_Psych_Ward.iPrintLn("Actions available: Check Database, Add Record, Update Record & Delete Records.");
 				
-			} catch (SQLException | BadConnection e) {
-				
-				e.printStackTrace();
 			}
+			else {
+				
+				// Print message
+				Escape_The_Psych_Ward.iPrintLn("You need to find a username and password to login into the computer.");
+			}
+
 			break;
-			
+
 		// Move to psych room commands
 		case crawlvent:
 		case movevent:
@@ -271,15 +341,19 @@ public class OfficeRoom extends Scene {
 		case gopsychroom:
 		case walkpsychroom:
 		case walkpsych:
-			
+		case goroom:
+
 			// Move to psych room
 			GameManager.currentLocation = "Psych Room";
 			GameManager.location();
+			
+			// Print messages
+			Escape_The_Psych_Ward.iPrintLn("Response:");
 			Escape_The_Psych_Ward.iPrintLn("You have crawl through the vent back to your psych room.");
 			break;
-			
+
 		default:
 			break;
-	}
+		}
 	}
 }

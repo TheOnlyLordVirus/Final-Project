@@ -152,18 +152,21 @@ public class Escape_DB {
                         + "'Science Division',"
                         + "'Head Researcher'"
                         + ")");
+                    
                     stmt.executeUpdate("INSERT INTO STAFF VALUES ("
                         + "2,"
                         + "'Charles Ashford',"
                         + "'Science Division',"
                         + "'Sr. Researcher'"
                         + ")");
+                    
                     stmt.executeUpdate("INSERT INTO STAFF VALUES ("
                         + "3,"
                         + "'Anna Bolt',"
                         + "'Science Division',"
                         + "'Researcher'"
                         + ")");
+                    
                     /**
                     * CREATES SUBJECTS TABLE
                     */
@@ -174,6 +177,7 @@ public class Escape_DB {
                         + "SUBJECT_AGE INT,"
                         + "MEMORY_WIPES INT"
                         + ")");
+                    
                     /**
                     * UPDATES STAFF TABLE WITH VALUES
                     */
@@ -236,7 +240,7 @@ public class Escape_DB {
                              * Creates query called STAFF for all records in STAFF
                              */
      		    			ResultSet STAFF = stmt.executeQuery("SELECT * FROM STAFF");
-                             Escape_The_Psych_Ward.iPrintLn("\n" + "Department: Science Division");
+                             Escape_The_Psych_Ward.iPrintLn("Department: Science Division");
                              /**
                              * Loop and print out while STAFF has a next row
                              */
@@ -273,7 +277,7 @@ public class Escape_DB {
                              * Creates query called ADD for all records in STAFF WHERE THE STAFF ID = 4
                              */
      		    			ResultSet ADD = stmt.executeQuery("SELECT * FROM STAFF WHERE STAFF_ID = 4");
-                             Escape_The_Psych_Ward.iPrintLn("\n" + "Department: Science Division");
+                             Escape_The_Psych_Ward.iPrintLn("Department: Science Division");
                              /**
                              * Loop and print out while the ADD query has a next row
                              */
