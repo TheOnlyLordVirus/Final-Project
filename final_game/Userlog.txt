@@ -246,3 +246,4 @@ User Input: smile
 Action was performed
 Bad Ending: Smile
 User Started The Game
+User Started The Game
