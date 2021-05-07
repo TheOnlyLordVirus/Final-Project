@@ -1,5 +1,8 @@
 package Scenes;
 
+/**
+ * Scene interface
+ */
 public interface SceneInterface 
 {
 	// Actually needed to use a interface to define ParseCombination(),

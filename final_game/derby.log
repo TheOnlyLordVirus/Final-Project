@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Mon May 03 01:27:46 CDT 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0179-30e9-4dba-000005f53bb0 
-on database directory C:\NWTC\NWTC Semester Four\Java\Final Project Testing\17\final_game (3)\final_game\ESCAPE with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
-Loaded from file:/C:/NWTC/NWTC%20Semester%20Four/Java/Final%20Project%20Testing/17/final_game%20(3)/final_game/lib/derby.jar
+Thu May 06 16:34:38 CDT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0179-439a-a49d-000005252f68 
+on database directory C:\NWTC\NWTC Semester Four\Java\Final Project Testing\18\final_game\ESCAPE with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/NWTC/NWTC%20Semester%20Four/Java/Final%20Project%20Testing/18/final_game/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_261-b12
-user.dir=C:\NWTC\NWTC Semester Four\Java\Final Project Testing\17\final_game (3)\final_game
+user.dir=C:\NWTC\NWTC Semester Four\Java\Final Project Testing\18\final_game
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0

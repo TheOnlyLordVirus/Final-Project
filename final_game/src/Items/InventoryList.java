@@ -3,16 +3,16 @@ package Items;
 /**
  * @author Trenton Metzler
  * 
- * A list that only conatins the methods we need for our games inventory management.
+ * A list that only contains the methods we need for our games inventory management.
  *
  * @param <T>
  */
 public class InventoryList <T>
 {
 	/**
-	 * Basicly just a container to store data and the next set of data, which can contain another set of data in it, which can contain another set of data in it.... 
+	 * Basically just a container to store data and the next set of data, which can contain another set of data in it, which can contain another set of data in it.... 
 	 * and so on...
-	 * As longs as next != null then there is another peice of data in this 'chain' of nodes.
+	 * As longs as next != null then there is another piece of data in this 'chain' of nodes.
 	 * 
 	 * @author Trenton Metzler
 	 *

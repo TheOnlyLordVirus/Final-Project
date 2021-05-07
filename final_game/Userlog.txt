@@ -1,0 +1,248 @@
+User Started The Game
+User Input: inspect bed
+Action was performed
+User Input: inspect vent
+Action was performed
+User Input: open door
+Action was performed
+User Input: inspect clock
+Action was performed
+User Input: inspect window
+Action was performed
+User Input: go to dining room
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to teeth maniac
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to smoker
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to security
+Invaild word used: to, removing word.
+Invaild word used: security, removing word.
+Invaild word Combination: talk
+User Input: punch smoker
+Action was performed
+Bad Ending: Fight Smoker
+User Started The Game
+User Input: go dining
+Action was performed
+User Input: go to office
+Invaild word used: to, removing word.
+Invaild word Combination: gooffice
+User Input: punch teeth manic
+Invaild word used: manic, removing word.
+Invaild word Combination: punchteeth
+User Input: smile
+Action was performed
+Bad Ending: Smile
+User Started The Game
+User Input: go dining
+Action was performed
+User Input: punch mainac
+Invaild word used: mainac, removing word.
+Invaild word Combination: punch
+User Input: punch guard
+Action was performed
+User Input: go dining
+Action was performed
+User Input: talk maniac
+Action was performed
+User Input: go dining
+Invaild word Combination: godining
+User Input: go room
+Action was performed
+User Input: open vent
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: go office
+Action was performed
+User Input: check desk
+Action was performed
+User Input: go vent
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: go dining
+Action was performed
+User Input: talksmoker
+Invaild word used: talksmoker, removing word.
+Invaild word Combination: 
+User Input: talk smoker
+Action was performed
+User Input: go room
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: open window
+Action was performed
+User Input: go window
+Action was performed
+User Input: turn off genrator
+Invaild word used: genrator, removing word.
+Invaild word Combination: turnoff
+User Input: go gate
+Action was performed
+Bad Ending: Gate / Guard Post
+User Started The Game
+User Input: open door
+Action was performed
+User Started The Game
+User Started The Game
+User Input: open door
+Action was performed
+User Input: go to dining room
+Invaild word used: to, removing word.
+Action was performed
+User Input: go back to personal psych ward
+Invaild word used: back, removing word.
+Invaild word used: to, removing word.
+Invaild word used: ward, removing word.
+Invaild word Combination: gopersonalpsych
+User Input: talk to smoker
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to teeth maniac
+Invaild word used: to, removing word.
+Action was performed
+User Input: fight guard
+Action was performed
+User Input: leave room
+Invaild word used: leave, removing word.
+Invaild word Combination: room
+User Input: go to dining room
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to teeth maniac
+Invaild word used: to, removing word.
+Action was performed
+User Input: talk to smoker
+Invaild word used: to, removing word.
+Action was performed
+User Input: go back to room
+Invaild word used: back, removing word.
+Invaild word used: to, removing word.
+Action was performed
+User Input: open vent
+Action was performed
+User Input: check vent
+Action was performed
+User Input: wait till night
+Invaild word used: wait, removing word.
+Invaild word used: till, removing word.
+Invaild word used: night, removing word.
+Invaild word Combination: 
+User Input: go on bed
+Invaild word used: on, removing word.
+Action was performed
+User Input: go to vent
+Invaild word used: to, removing word.
+Action was performed
+User Input: find cigarettes
+Invaild word used: find, removing word.
+Invaild word used: cigarettes, removing word.
+Invaild word Combination: 
+User Input: go to computer
+Invaild word used: to, removing word.
+Invaild word Combination: gocomputer
+User Input: use computer
+Action was performed
+User Input: check desk
+Action was performed
+User Input: use computer
+Action was performed
+User Input: delete records
+Action was performed
+User Input: update records
+Invaild word Combination: updaterecords
+User Input: update record
+Action was performed
+User Started The Game
+User Input: go dining
+Action was performed
+User Input: punch guard
+Action was performed
+User Input: go dining
+Action was performed
+User Input: trade tooth
+Action was performed
+User Input: go room
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: open vent
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: sleep bed
+Action was performed
+User Input: go vent
+Action was performed
+User Input: check desk
+Action was performed
+User Input: go vent
+Action was performed
+User Input: bed
+Invaild word Combination: bed
+User Input: go in bed
+Invaild word used: in, removing word.
+Action was performed
+User Input: go in dining room
+Invaild word used: in, removing word.
+Action was performed
+User Input: talk to smoker
+Invaild word used: to, removing word.
+Action was performed
+User Input: go back to room
+Invaild word used: back, removing word.
+Invaild word used: to, removing word.
+Action was performed
+User Input: go to window
+Invaild word used: to, removing word.
+Action was performed
+User Input: remove metal bars
+Invaild word used: remove, removing word.
+Invaild word used: bars, removing word.
+Invaild word Combination: metal
+User Input: use metal file on window
+Invaild word used: on, removing word.
+Invaild word Combination: usemetalfilewindow
+User Input: use metal file
+Action was performed
+User Input: check window
+Action was performed
+User Input: go to bed
+Invaild word used: to, removing word.
+Action was performed
+User Input: go to window
+Invaild word used: to, removing word.
+Action was performed
+User Input: leave
+Invaild word used: leave, removing word.
+Invaild word Combination: 
+User Input: find exit
+Invaild word used: find, removing word.
+Invaild word used: exit, removing word.
+Invaild word Combination: 
+User Input: go to generator
+Invaild word used: to, removing word.
+Action was performed
+User Input: turn off generator
+Action was performed
+User Input: distract guard
+Invaild word used: distract, removing word.
+Invaild word Combination: guard
+User Input: go to fence
+Invaild word used: to, removing word.
+Action was performed
+Good Ending: Fence
+User Started The Game
+User Input: go in dining room
+Invaild word used: in, removing word.
+Action was performed
+User Input: smile
+Action was performed
+Bad Ending: Smile
+User Started The Game

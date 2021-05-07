@@ -11,6 +11,8 @@ import start.Escape_The_Psych_Ward;
 
 /**
  * Runs and holds all the objects and features to operate the game
+ * 
+ * @author Cole Frisch & Trenton Metzler
  *
  */
 public class GameManager 
@@ -26,7 +28,7 @@ public class GameManager
 	//  - Trenton Metzler
 	public static InventoryList<Item> UserItems = new InventoryList<Item>();
 	
-	// Use to get the current Scene from Scenes;
+	// Use to get the current Scene from Scenes
 	public static String currentLocation = "Psych Room";
 	
 	
@@ -107,6 +109,7 @@ public class GameManager
 			if(GameOver == false)
 			{
 				
+				// Set action as message
 				action = message;
 				
 				// Print the location

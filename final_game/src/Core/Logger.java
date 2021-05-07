@@ -9,7 +9,10 @@ import java.io.PrintWriter;
 import java.io.Writer;
 
 /**
- * Logger Class
+ * Logger interface
+ * 
+ * @author Cole Frisch
+ *
  */
 public interface Logger 
 {
@@ -40,7 +43,7 @@ public interface Logger
 		} 
 		catch (Exception e) 
 		{
-
+			// Blank
 		}
 		
 		// Try to add message to file
@@ -59,23 +62,28 @@ public interface Logger
 			System.out.println("Error unable to add message to file.");
 		}
 	}
-	
+
+	/**
+	 * Delete log file
+	 */
 	public static void deleteLog() {
 		
 		// Create file instance
 		File file = new File("Userlog.txt");
 		try {
+			
+			// Delete file
 			file.delete();
 		}
 		catch(Exception e) {
 			
+			// Print message to console
 			System.out.println("Error when deleting file");
 		}
 	}
 
 	/**
 	 * Read messages from file log
-	 * 
 	 */
 	public static void readLog() 
 	{
@@ -98,7 +106,7 @@ public interface Logger
 		} 
 		catch (Exception e) 
 		{
-
+			// Blank
 		}
 
 		// Try to read the file
@@ -125,7 +133,7 @@ public interface Logger
 		catch (Exception e) 
 		{
 
-			// Print message
+			// Print message to console
 			System.out.println("Error unable to read file.");
 		}
 	}

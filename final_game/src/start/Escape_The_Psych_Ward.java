@@ -20,6 +20,9 @@ import java.awt.Font;
 
 /**
  * Escape_The_Psych_Ward class
+ * 
+ * @author Trenton Metzler
+ *
  */
 public class Escape_The_Psych_Ward 
 {

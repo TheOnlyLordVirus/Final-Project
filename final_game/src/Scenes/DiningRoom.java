@@ -5,7 +5,10 @@ import Core.Logger;
 import start.Escape_The_Psych_Ward;
 
 /**
- * Cafeteria Room Class extends Scene
+ * Dining Room extends Scene
+ * 
+ * @author Cole Frisch
+ *
  */
 public class DiningRoom extends Scene 
 {

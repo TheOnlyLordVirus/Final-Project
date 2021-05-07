@@ -3,7 +3,10 @@ package Core;
 import java.util.Calendar;
 
 /**
- * Time Tracker Class
+ * Time Tracker class
+ * 
+ * @author Cole Frisch & Jose Tlatempa-Dominguillo
+ *
  */
 public class TimeTracker {
 	

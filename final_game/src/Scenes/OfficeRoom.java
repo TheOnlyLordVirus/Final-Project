@@ -9,7 +9,10 @@ import Core.Escape_DB.BadConnection;
 import start.Escape_The_Psych_Ward;
 
 /**
- * OfficeRoom Class extends Scene
+ * Office Room extends Scene
+ * 
+ * @author Cole Frisch
+ *
  */
 public class OfficeRoom extends Scene {
 

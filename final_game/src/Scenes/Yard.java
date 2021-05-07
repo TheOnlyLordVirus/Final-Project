@@ -6,6 +6,9 @@ import start.Escape_The_Psych_Ward;
 
 /**
  * Yard class extends Scene
+ * 
+ * @author Cole Frisch
+ *
  */
 public class Yard extends Scene {
 

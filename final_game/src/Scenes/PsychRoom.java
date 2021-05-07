@@ -8,7 +8,10 @@ import Core.TimeTracker;
 import start.Escape_The_Psych_Ward;
 
 /**
- * PsychRoom Class extends Scene
+ * Psych Room class extends scene
+ * 
+ * @author Cole Frisch
+ *
  */
 public class PsychRoom extends Scene {
 
@@ -61,7 +64,7 @@ public class PsychRoom extends Scene {
 		case opendoor:
 
 			// Check the time
-			if (TimeTracker.dateTime.get(Calendar.HOUR) == 0) {
+			if (TimeTracker.dateTime.get(Calendar.HOUR_OF_DAY) == 0) {
 
 				// Print message
 				Escape_The_Psych_Ward.iPrintLn("The door is locked and cannot be opened.");

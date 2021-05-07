@@ -1,5 +1,6 @@
 package Core;
 import java.sql.*;
+import java.util.ArrayList;
 
 import Scenes.OfficeRoom.enumCombination;
 import start.Escape_The_Psych_Ward;
@@ -8,7 +9,6 @@ import start.Escape_The_Psych_Ward;
  * Escape_DB Class
  */
 public class Escape_DB {
-
 		/**
 		* Creates a custom exception nested 
 		*/
@@ -26,6 +26,7 @@ public class Escape_DB {
 		*/
         public static void Database(enumCombination enumCombination) throws SQLException, BadConnection 
         {
+        	
 			/**
 			* Sets up the URL for the JDBC to derby:ESCAPE;create=true
 			*/
@@ -33,7 +34,7 @@ public class Escape_DB {
 			/**
 			* Check if the custom connection is null
 			* using assertions we check if the connection is null
-			* if the connection is null we throw our customer "Bad Connection" exception 
+			* if the connection is null we throw our customer "Bad Connection" exception
 			* from our nested BadConnection class
 			*/
 	        Connection conn = DriverManager.getConnection(url); 
@@ -152,21 +153,18 @@ public class Escape_DB {
                         + "'Science Division',"
                         + "'Head Researcher'"
                         + ")");
-                    
                     stmt.executeUpdate("INSERT INTO STAFF VALUES ("
                         + "2,"
                         + "'Charles Ashford',"
                         + "'Science Division',"
                         + "'Sr. Researcher'"
                         + ")");
-                    
                     stmt.executeUpdate("INSERT INTO STAFF VALUES ("
                         + "3,"
                         + "'Anna Bolt',"
                         + "'Science Division',"
                         + "'Researcher'"
                         + ")");
-                    
                     /**
                     * CREATES SUBJECTS TABLE
                     */
@@ -177,7 +175,6 @@ public class Escape_DB {
                         + "SUBJECT_AGE INT,"
                         + "MEMORY_WIPES INT"
                         + ")");
-                    
                     /**
                     * UPDATES STAFF TABLE WITH VALUES
                     */
@@ -231,39 +228,58 @@ public class Escape_DB {
                             Escape_The_Psych_Ward.iPrintLn("Login Sucessful");
                             Escape_The_Psych_Ward.iPrintLn("Accessing System Files...");
                          	break;
-                         	
+
                          /**
                          * Switch statement if currentCombination = check database
                          */
                          case checkdatabase:
+                        	 ArrayList<String> STAFFLIST = new ArrayList<String>();
+                        	 ArrayList<String> SUBJECTLIST = new ArrayList<String>();
                              /**
+                             * TV Show Reference /https://www.youtube.com/watch?v=vBuZoFjEFAY
+                             */
+                        	 String Text = "Stewie the cool!";
+
+                             /**
+                              * 
                              * Creates query called STAFF for all records in STAFF
                              */
-     		    			ResultSet STAFF = stmt.executeQuery("SELECT * FROM STAFF");
+     		    			 ResultSet STAFF = stmt.executeQuery("SELECT * FROM STAFF");
                              Escape_The_Psych_Ward.iPrintLn("Department: Science Division");
                              /**
                              * Loop and print out while STAFF has a next row
                              */
                              while(STAFF.next()) {
-                                 Escape_The_Psych_Ward.iPrintLn("Name: " + STAFF.getString("EMPLOYEE_NAME") + "\n" + "Position: " + STAFF.getString("ROLE"));
+                            	 STAFFLIST.add("Name: " + STAFF.getString("EMPLOYEE_NAME") + "\n" + "Position: " + STAFF.getString("ROLE"));
                              }
-                             Escape_The_Psych_Ward.iPrintLn("\n" + "Prisoners:");
+                             /**
+                             * Lamda foreach print expression 1
+                             */
+                             STAFFLIST.forEach((String v) -> Escape_The_Psych_Ward.iPrintLn(v));
+                             Escape_The_Psych_Ward.iPrintLn("Prisoners:");
                              /**
                              * Creates query called SUBJECTS for all records in STAFF
                              */
-     		    			ResultSet SUBJECTS = stmt.executeQuery("SELECT * FROM SUBJECTS");
+     		    			 ResultSet SUBJECTS = stmt.executeQuery("SELECT * FROM SUBJECTS");
                              /**
                              * Loop and print out while SUBJECTS has a next row
                              */
                              while(SUBJECTS.next()) {
-                                 Escape_The_Psych_Ward.iPrintLn("Name: " + SUBJECTS.getString("SUBJECT_NAME") + "\n" + "Age: " + SUBJECTS.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + SUBJECTS.getString("MEMORY_WIPES"));
+                            	 SUBJECTLIST.add("Name: " + SUBJECTS.getString("SUBJECT_NAME") + "\n" + "Age: " + SUBJECTS.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + SUBJECTS.getString("MEMORY_WIPES"));
                              }
+                             /**
+                             * Lambda foreach print expression 2 + Lambda with variable.
+                             * 
+                             */
+                             SUBJECTLIST.forEach((String v) -> Escape_The_Psych_Ward.iPrintLn(v + Text));
+                             Escape_The_Psych_Ward.iPrintLn("It would appear there is some sort of \"Stewie Is Cool\" glitch...");
                              break;
                              
                          /**
                          * Switch statement if currentCombination = add record
                          */
                          case addrecord:
+                        	 ArrayList<String> ADDLIST = new ArrayList<String>();
                              /**
                              * Inserts a row into STAFF
                              */
@@ -276,21 +292,25 @@ public class Escape_DB {
                              /**
                              * Creates query called ADD for all records in STAFF WHERE THE STAFF ID = 4
                              */
-     		    			ResultSet ADD = stmt.executeQuery("SELECT * FROM STAFF WHERE STAFF_ID = 4");
-                             Escape_The_Psych_Ward.iPrintLn("Department: Science Division");
+     		    			 ResultSet ADD = stmt.executeQuery("SELECT * FROM STAFF WHERE STAFF_ID > 4");
+                             Escape_The_Psych_Ward.iPrintLn("\n" + "Department: Science Division");
                              /**
                              * Loop and print out while the ADD query has a next row
                              */
                              while(ADD.next()) {
-                                 Escape_The_Psych_Ward.iPrintLn("Name: " + ADD.getString("EMPLOYEE_NAME") + "\n" + "Position: " + ADD.getString("ROLE"));
+          		    			ADDLIST.add("Name: " + ADD.getString("EMPLOYEE_NAME") + "\n" + "Position: " + ADD.getString("ROLE"));
                              }
+                             /**
+                             * Lamda foreach print expression 3
+                             */
+                             ADDLIST.forEach((String v) -> Escape_The_Psych_Ward.iPrintLn(v));
                              break;
                              
                          /**
                          * Switch statement if currentCombination = updaterecord 
                          */
                          case updaterecord:
-
+                        	 ArrayList<String> AGELIST = new ArrayList<String>();
                              /**
                              * Updates SUBJECT_AGE in SUBJECTS for the SUBJECT_ID that = 3
                              */
@@ -300,28 +320,38 @@ public class Escape_DB {
                              * Loop and print out while the ADD query has a next row
                              */
                              while(AGE.next()) {
-                                 Escape_The_Psych_Ward.iPrintLn("Name: " + AGE.getString("SUBJECT_NAME") + "\n" + "Age: " + AGE.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + AGE.getString("MEMORY_WIPES"));
+                            	 AGELIST.add("Name: " + AGE.getString("SUBJECT_NAME") + "\n" + "Age: " + AGE.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + AGE.getString("MEMORY_WIPES"));
                              }
+                             /**
+                             * Lamda foreach print expression 4
+                             */
+                             AGELIST.forEach((String v) -> Escape_The_Psych_Ward.iPrintLn(v));
                              break;
                              
                          /**
                          * Switch statement if currentCombination = deleterecords
                          */
-                         case deleterecords: 
-
+                         case deleterecords:
+                        	 ArrayList<String> DELETELIST = new ArrayList<String>();
                              /**
                              * Deletes all records in SUBJECTS
                              */
                              stmt.executeUpdate("DELETE FROM SUBJECTS WHERE SUBJECT_ID > 0");
+                             stmt.executeUpdate("DELETE FROM STAFF WHERE STAFF_ID > 0");
                              /**
                              * Creates a query of all rows in SUBJECTS
                              */
-     		    			ResultSet DELETE = stmt.executeQuery("SELECT * FROM SUBJECTS");
+     		    			ResultSet DELETE = stmt.executeQuery("SELECT * FROM SUBJECTS, STAFF");
+     		    			DELETELIST.add("Name: " + DELETE.getString("SUBJECT_NAME") + "\n" + "Age: " + DELETE.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + DELETE.getString("MEMORY_WIPES"));
+     		    			
                              /**
                              * Loop and print out while the DELETE query has a next row
                              */
                              if(DELETE.next()) {
-                                 Escape_The_Psych_Ward.iPrintLn("Name: " + DELETE.getString("SUBJECT_NAME") + "\n" + "Age: " + DELETE.getString("SUBJECT_AGE") + "\n" + "Total Memory Wipes: " + DELETE.getString("MEMORY_WIPES"));
+                                 /**
+                                  * Lamda foreach print expression 5
+                                  */
+                            	 DELETELIST.forEach((String v) -> Escape_The_Psych_Ward.iPrintLn(v));
                              }
                              /**
                              * If there are no records in SUBJECTS then print out message.
@@ -330,7 +360,8 @@ public class Escape_DB {
                                  Escape_The_Psych_Ward.iPrintLn("No Prisoner Records Found.");
                              }
                              break;
-                             
+                            
+                        	 
                          /**
                          * If the selection variable is not part of the switch statment then give error message.
                          */
